@@ -13,10 +13,12 @@ This repo demonstrates a problem with Typeorm synchronization of array of varcha
 ## Additional Information
 Every time the compiled code is executed after the initial schema creation, the console output will show the roles column is added and removed, losing any data that was stored in it.
 
-`query: ALTER TABLE "test"."user" DROP COLUMN "roles"
-
-query: ALTER TABLE "test"."user" ADD "roles" character varying(64) array NOT NULL`
-
+`
+query: ALTER TABLE "test"."user" DROP COLUMN "roles"
+`
+`
+query: ALTER TABLE "test"."user" ADD "roles" character varying(64) array NOT NULL
+`
 The roles column is defined in the user entity: 
 
 `
