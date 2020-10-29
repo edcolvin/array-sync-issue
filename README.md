@@ -19,6 +19,7 @@ query: ALTER TABLE "test"."user" ADD "roles" character varying(64) array NOT NUL
 `
 
 The roles column is defined in the user entity: 
+
 `
   @Column({
     array: true,
