@@ -12,7 +12,7 @@ export class User {
   @Column({
     array: true,
     type: "character varying",
-    length: 128,
+    length: 64,
   })
   roles: string[];
 }
