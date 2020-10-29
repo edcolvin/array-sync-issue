@@ -15,6 +15,7 @@ Every time the compiled code is executed after the initial schema creation, the 
 
 `
 query: ALTER TABLE "test"."user" DROP COLUMN "roles"
+
 query: ALTER TABLE "test"."user" ADD "roles" character varying(64) array NOT NULL
 `
 
