@@ -1,8 +1,8 @@
 # Postgres Typeorm Array Type Synchronization Issue
-This repo demonstrates a problem with Typeorm synchronization of array of varchars on postgres.
+This repo demonstrates a problem with Typeorm synchronization of array of varchars on Postgres.
 
 ## Issue description
-When a length is specified for an array of type varchar and synchronization is enabled, Typeorm will drop and re-add the column on startup even if there are no schema changes. 
+When using Postgres, if a length is specified for an array of type varchar and synchronization is enabled, Typeorm will drop and re-add the column on startup even if there are no schema changes. 
 
 If the length property is removed, the behavior will stop occurring. 
 
